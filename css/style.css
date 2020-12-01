@@ -1,0 +1,296 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    margin: 0;
+}
+
+.fab {
+   display: inline-block !important;
+}
+
+.one {
+    height: 300px !important;
+    background-image: url(../img/Layer\ 1.png);
+    background-size: cover;
+    filter: brightness(0.6) ;
+    display: flex;
+    justify-content: center;
+}
+
+.one h4 {
+    color: #333;
+}
+.one h4 > span {
+    color:#000;
+    font-weight: bold;
+}
+
+.Two {
+    height: 250px;
+    background-color: #FFF;
+}
+
+.Two .provide h5 {
+    font-size: 18px;
+    margin-right: 27px;
+}
+
+.Two .provide p span{
+    color: lightseagreen;
+}
+
+@media ( max-width : 660px ) {
+    .Two .provide h5 {
+        font-size: 16px;
+        margin-right: 25px;
+    }
+}
+
+
+@media ( max-width : 620px ) {
+    .Two  {
+        margin-bottom: 0px !important;
+    }
+
+    .Two .provide h5 {
+        font-size: 13px;
+        margin-right: 5px;
+    }
+    .Two .provide p {
+        font-size: 13px;
+    }
+}
+
+.content {
+    position: absolute;
+    width: 100%;
+    height: 550px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.content .inner-content {
+     width: 60%;
+     border: solid 1px black;
+     background: #DDD;
+}
+
+.content .inner-content a {
+    padding: 0;
+    color: #7ab4de;
+    font-weight: 400;
+}
+
+.content .inner-content p {
+    color: #c8c8c8;
+}
+
+@media (max-width: 768px) {
+    .one > h4 {
+        font-size: 20px;
+    }
+
+    .content .inner-content p {
+        font-size: 15px;
+    }
+ }
+
+@media (max-width: 576px) { 
+    .one > h4 {
+        font-size: 16px;
+    }
+
+    .content .inner-content  {
+        margin-top: 30px;
+    }
+
+    .content .inner-content p {
+        font-size: 14px;
+    }
+
+ }
+
+@media (max-width : 414px) {
+   .container-fluid .made-by {
+        font-size: 12px;
+    }
+
+    .container-fluid .medias {
+        padding: 15px 0 !important;
+    }
+
+    .content .inner-content .bg-dark {
+        padding: 9px !important;
+    }
+
+    .content .inner-content p{
+       font-size: 13px;
+    }
+}
+
+
+/*  start choose */
+
+.choose {
+    background: url(../img/Layer\ 1.png);
+    background-size: cover;
+    position: relative;
+}
+
+.choose .overLay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #333;
+    opacity: .6;
+} 
+
+.choose h4 {
+    text-align: center;
+    font-size: 18px;
+    margin: 8px 0 13px 0;
+    color: #FFF;
+}
+
+.choose p {
+    line-height: 19px;
+    font-size: 14px;
+    text-align: center;
+    color: #FFF;
+}
+
+@media (max-width: 992px) {
+    h4 {
+        font-size: 15px !important;
+    }
+
+    .choose .col-12 {
+        margin-bottom: 10px;
+        border-bottom: solid 1px #FFF;
+    }
+ } 
+
+ 
+
+ /*styling projects*/
+ 
+ .projects > h4 , .projects p {
+     color: #848b90 ;
+ }
+
+ .projects .row > div {
+     height: 507px;
+ }
+  
+ .projects .row > div img{
+     width: 100%;
+     height: 100%;
+ }
+
+
+ @media (max-width: 768px) { 
+
+    .projects .row > div {
+         margin-bottom: 10px;
+    }
+
+    .projects .row > div img{
+        width: 80%;
+        height: 100%;
+        display: block;
+        margin: auto;
+        border: solid 2px #333;
+    }
+   
+
+ }
+
+ @media ( max-width : 567px) {
+    .projects p {
+        font-size: 14px;
+    }
+   
+ }
+
+ /*styling projects*/
+
+ /*styling testimonials*/
+
+ .testimonials > h4 , .testimonials > p {
+    color: #848b90 ;
+ }
+
+ .testimonials .row > div  img{
+     border-radius: 50%;
+     width: 96px;
+     height: 96px;
+     transition: box-shadow .2s ease-in ;
+ }
+
+ .testimonials .row > div  img:hover{
+    box-shadow: 0 7px 10px #999;
+ }
+
+ .testimonials .row div > p {
+     width: 70%;
+     margin: 13px auto;
+     color: #43b5fd;
+     font-weight: 500;
+ }
+
+ .testimonials .row div > a {
+   color: #848b90;
+ }
+
+ @media ( max-width : 567px) {
+    .projects p {
+        font-size: 14px;
+    }
+   .testimonials .row div {
+      margin-bottom: 15px;
+   } 
+
+   .testimonials .row div > a {
+       border-bottom: solid 1px #333;
+   }
+   
+ }
+ /*styling testimonials*/
+
+ /*footer*/
+
+ .footer .icon {
+     padding: 2px;
+     background-color: #FFF;
+      border-radius: 100%;
+      transition: all .3s ease-in-out;
+ }
+
+ .footer .icon:hover {
+     background: #333;
+ }
+
+ .footer .icon:hover i {
+     color: #FFF !important;
+ }
+
+
+ @media ( max-width : 856px ) {
+     .footer p {
+         font-size: 13px;
+     }
+ }
+
+@media ( max-width : 756px ) {
+    .footer p {
+        font-size: 11px;
+    }
+}
